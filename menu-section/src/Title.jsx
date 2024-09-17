@@ -1,8 +1,12 @@
 import React from 'react'
 
-const Title = () => {
+const Title = ({text}) => {
   return (
-    <h2>Our Menu</h2>
+    <div className="title">
+        <h2>{text || 'Default Title'}</h2>
+        <div className="title-underline"></div>
+    </div>
+    
   )
 }
 
