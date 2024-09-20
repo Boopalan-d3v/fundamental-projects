@@ -346,3 +346,12 @@ ul {
   }
 }
 
+/* ============= Slick Carousel CSS =============== */
+
+.slider-container{
+  margin: 0 auto;
+  margin-top: 10rem;
+  width: 80vw;
+  max-width: 800px;
+}
+
