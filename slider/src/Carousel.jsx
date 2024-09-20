@@ -1,6 +1,5 @@
-import React, { useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import { shortList,longList, list } from './data';
-import { useState} from 'react'
 import {FiChevronLeft , FiChevronRight} from 'react-icons/fi'
 import { FaQuoteRight } from 'react-icons/fa'
 const Carousel = () => {
