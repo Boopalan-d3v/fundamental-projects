@@ -17,7 +17,7 @@ const App = () => {
 
   return (
     <section className='section-center'>
-      <h2 className='title'>Tired of Boring Lorem Ipsum</h2>
+      <h4 className='title'>Tired of Boring Lorem Ipsum</h4>
       <form className='lorem-form' onSubmit={handleSubmit}>
         <label htmlFor="amount">paragraph:</label>
         <input 
@@ -31,12 +31,12 @@ const App = () => {
           onChange={handleChange}>
         </input>
         <button type='submit' className='btn'>generate</button>
-        <article className='lorem-text'>
-          {text.map((item) => {
-            return <p key={nanoid()}>{item}</p>
-          })}
-        </article>
       </form>
+      <article className='lorem-text'>
+        {text.map((item) => {
+          return <p key={nanoid()}>{item}</p>
+        })}
+      </article>
     </section>
   );
 };
