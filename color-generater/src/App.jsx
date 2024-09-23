@@ -1,4 +1,12 @@
+import ColorList from "./Components/ColorList";
+import Form from "./Components/Form";
+
 const App = () => {
-  return <h2>Color Generator Starter</h2>;
+  return (
+    <div>
+      <Form />
+      <ColorList />
+    </div>
+  );
 };
 export default App;
