@@ -8,7 +8,7 @@ const SingleColor = ({color, index}) => {
         if(navigator.clipboard){
             try {
                await navigator.clipboard.writeText(`#${hex}`)
-               toast.success('Copied')
+               toast.success('value Copied to Clipboard')
             } catch (error) {
                 toast.error('failed to copy')
             }
@@ -22,7 +22,7 @@ const SingleColor = ({color, index}) => {
         style={{background:`#${hex}`}} 
         onClick={saveToClipboard}
     >
-        <p className='present-value'> {weight}% </p>
+        <p className='percent-value'> {weight}% </p>
         <p className='color-value'> #{hex} </p>
     </article>
   )
