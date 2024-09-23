@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
 
-const Form = () => {
+const Form = ( {addColor}) => {
     const [ input, setInput] = useState ('')
 
-    const handleSubmit = () => {
-
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        addColor(input);
+        
     }
 
   return (
