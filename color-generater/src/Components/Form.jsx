@@ -2,12 +2,37 @@ import React, { useState } from 'react'
 
 const Form = () => {
     const [ input, setInput] = useState ('')
-    const [ color, setColor] = useState('')
+
+    const handleSubmit = () => {
+
+    }
+
   return (
-    <form className='color-form'>
-        <input type="text" value={input} onChange={(e) => setInput(e.target.value)} />
-        <input type='color' value={color} onChange={(e) => setColor()}/>
-    </form>
+    <section className='container'>
+        <h4>Color Generator</h4>
+        <form className='color-form' onSubmit={handleSubmit}>
+            <input 
+                type='color' 
+                value={input} 
+                onChange={(e) => setInput(e.target.value)}
+            />
+
+            <input 
+                type="text" 
+                value={input} 
+                onChange={(e) => setInput(e.target.value)} 
+                placeholder='#f15025' 
+            />
+
+            <button 
+                type='submit' 
+                className='btn' 
+                style={{background: input}}
+            >
+                Submit
+            </button>
+        </form>
+    </section>
   )
 }
 
