@@ -254,3 +254,6 @@ ul {
 }
 /* ============= PROJECT CSS =============== */
 
+.color color-light{
+  color: var(--white);
+}
