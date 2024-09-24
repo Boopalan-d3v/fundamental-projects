@@ -53,6 +53,7 @@ const App = () => {
       return item;
     })
     setItems(newItems)
+    setLocalStorage(newItems)
   }
   
   return(
