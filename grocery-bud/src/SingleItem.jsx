@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
  
 const SingleItem = ({item, removeItem, editItem}) => {
     const {id, name, completed} = item
