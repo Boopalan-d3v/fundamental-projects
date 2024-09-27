@@ -3,10 +3,10 @@ import Model from "./Components/Model";
 import Sidebar from "./Components/Sidebar";
 
 const App = () => {
-  return <main>
+  return <>
     <Home />
     <Model />
     <Sidebar />
-  </main>;
+  </>
 };
 export default App;
