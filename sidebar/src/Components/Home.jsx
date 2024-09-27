@@ -1,14 +1,15 @@
 import React from 'react'
 import { useGlobalContext } from './context'
+import { FaBars} from 'react-icons/fa'
 
 const Home = () => {
-  useGlobalContext()
+  const {openSidebar, openModel} = useGlobalContext()
+  
   return (
-    <div>
-        <h5>hey world !</h5>
-        <button type='button'>#First</button>
-        <button type='button'>#Second</button>
-    </div>
+    <main>
+      <button onClick={openSidebar} className='sidebar-toggle'><FaBars></FaBars></button>
+      <button className="btn" onClick={openModel}>show model</button>
+    </main>
   )
 }
 
