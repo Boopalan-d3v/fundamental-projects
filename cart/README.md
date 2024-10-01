@@ -2,23 +2,6 @@
 
 [Cart](https://www.figma.com/file/5AwKjnWuM6BhRYmxdQFpky/Cart?node-id=0%3A1&t=lfaO4zazTd7nqF1q-1)
 
-## Steps
-
-#### Setup
-
-```sh
-
-npm install
-```
-
-```sh
-npm run dev
-```
-
-#### Explore
-
-Explore the current application and analyze its functionality.
-
 #### Global Context and useReducer
 
 Set up global context and immediately create a general setup for useReducer. Create two files, one for reducer and one for actions.
